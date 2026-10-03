@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-geist-sans), var(--font-cairo), system-ui, sans-serif;
+}
+
+/* Larger base size: comfortable to read for everyone. */
+html { font-size: 17px; }
+html[lang="ar"] { font-size: 18px; }
+
+/* Arabic text uses Cairo first. */
+html[lang="ar"] body {
+  font-family: var(--font-cairo), var(--font-geist-sans), system-ui, sans-serif;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5); }
+  100% { box-shadow: 0 0 0 12px rgba(16, 185, 129, 0); }
+}
+.live-dot {
+  animation: pulse-ring 1.6s infinite;
+}
+
+/* Printing a receipt / prescription prints only the #print-area block. */
+@media print {
+  body * { visibility: hidden; }
+  #print-area, #print-area * { visibility: visible; }
+  #print-area { position: absolute; inset: 0; padding: 24px; }
+  .no-print { display: none !important; }
+}
