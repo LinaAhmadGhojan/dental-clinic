@@ -35,7 +35,7 @@ export function makeSeed(): State {
     patients: [
       { id: "p1", name: "Sara Haddad", phone: "0791 234 567", age: 29, allergies: "Penicillin", conditions: "", notes: "Prefers morning visits.", recallMonths: 6 },
       { id: "p2", name: "عمر خليل", phone: "0782 111 902", age: 41, allergies: "", conditions: "Diabetes (type 2)", notes: "Anxious about injections.", recallMonths: 6 },
-      { id: "p3", name: "Lina Nasser", phone: "0775 880 345", age: 12, allergies: "", conditions: "", notes: "Orthodontic patient.", recallMonths: 3 },
+      { id: "p3", name: "Layla Nasser", phone: "0775 880 345", age: 12, allergies: "", conditions: "", notes: "Orthodontic patient.", recallMonths: 3 },
       { id: "p4", name: "يزن عزيز", phone: "0799 600 120", age: 35, allergies: "", conditions: "", notes: "", recallMonths: 6 },
       { id: "p5", name: "Rania Obeid", phone: "0788 450 011", age: 24, allergies: "Latex", conditions: "", notes: "", recallMonths: 6 },
       { id: "p6", name: "خالد منصور", phone: "0777 321 654", age: 52, allergies: "", conditions: "High blood pressure", notes: "", recallMonths: 6 },
